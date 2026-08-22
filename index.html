@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.Hafeez Usmani — Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curRing"></div>
+<div id="progress"></div>
+
+<nav id="navbar">
+  <a href="#" class="nav-logo">AH<span>.</span>U</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" onclick="closeNav()">About</a></li>
+    <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+    <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+    <li><a href="#stats" onclick="closeNav()">Achievements</a></li>
+    <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+    <li><a href="#contact" class="nav-hire" onclick="closeNav()">Hire Me →</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" onclick="toggleNav()">☰</button>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"><canvas id="dotCanvas"></canvas></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Available for work</div>
+    <h1>A. Hafeez<br><span class="hi">Usmani</span></h1>
+    <p class="hero-roles"><span id="typed"></span><span class="typed-cursor">|</span></p>
+    <p class="hero-desc">Building modern, responsive web applications with React and JavaScript. Currently expanding my skills toward the MERN Stack while strengthening my programming foundation with Java and Object-Oriented Programming.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+    <div class="hero-stat-row">
+      <div class="hero-stat"><strong class="count-up" data-target="3" data-suffix="+">0</strong><span>Projects Live</span></div>
+      <div class="hero-stat"><strong class="count-up" data-target="6" data-suffix="+">0</strong><span>Technologies</span></div>
+      <div class="hero-stat"><strong>2026</strong><span>Active Portfolio</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="about-grid">
+    <div class="about-avatar-wrap reveal">
+      <div class="about-avatar"><div class="about-avatar-initials">AHU</div></div>
+      <div class="about-tag">Web Developer</div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-eyebrow">Who I Am</div>
+      <h3>Building modern web experiences — and continuously learning how to make them better.</h3>
+      <p>I'm <strong style="color:var(--text)">A. Hafeez Usmani</strong>,  an aspiring MERN Stack Developer and Computer Science student based in Karachi, Pakistan. I enjoy building responsive, user-friendly web applications using HTML, CSS, JavaScript, and React</p>
+      <p>Beyond the browser, I work with Java to sharpen my problem-solving instincts, and design logos that give brands a clear, lasting identity. My goal is to become a well-rounded software developer who ships meaningful, high-quality work.</p>
+      <div class="about-pills">
+        <span class="pill">Problem Solving</span><span class="pill">Clean Code</span>
+        <span class="pill">Responsive Design</span><span class="pill">Brand Identity</span>
+        <span class="pill">Continuous Learning</span><span class="pill">React Development</span>
+        <span class="pill">MERN Stack</span><span class="pill">Java & OOP</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section skills-section" id="skills">
+  <div class="section-eyebrow reveal">What I Do</div>
+  <h2 class="section-title reveal">Skills &amp; <span>Proficiency</span></h2>
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<section class="section" id="tech">
+  <div class="section-eyebrow reveal">Toolbox</div>
+  <h2 class="section-title reveal">Technologies <span>I Use</span></h2>
+  <div class="tech-grid reveal" id="techGrid"></div>
+</section>
+
+<section class="section" id="projects">
+  <div class="section-eyebrow reveal">What I've Built</div>
+  <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+<section class="section logos-section" id="logos">
+  <div class="section-eyebrow reveal">Brand Identity</div>
+  <h2 class="section-title reveal">Logo <span>Designs</span></h2>
+  <p class="logos-sub reveal">A collection of brand identities and logo designs created for clients and personal projects.</p>
+  <div class="logos-grid" id="logosGrid">
+
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo1.jpeg" alt="logo design 1">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 1</h4>
+        <p>Personal logo</p>
+      </div>
+    </div>
+
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo2.jpeg" alt="logo design 2">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 2</h4>
+        <p>Fitness logo</p>
+      </div>
+    </div>
+
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo3.jpeg" alt="logo design 3">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 3</h4>
+        <p>Restaurant logo</p>
+      </div>
+    </div>
+
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo4.jpeg" alt="logo design 4">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 4</h4>
+        <p>Company logo</p>
+      </div>
+    </div>
+
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo5.jpeg" alt="logo design 5">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 5</h4>
+        <p>Sample logo</p>
+      </div>
+    </div>
+
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo6.jpeg" alt="logo design 6">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 6</h4>
+        <p>Ahu Enterprises logo</p>
+      </div>
+    </div>
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo7.jpeg" alt="logo design 7">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 7</h4>
+        <p>Technological Solution logo</p>
+      </div>
+    </div>
+    <div class="logo-card reveal">
+      <div class="logo-img-slot">
+        <img src="logo8.jpeg" alt="logo design 8">
+      </div>
+      <div class="logo-info">
+        <h4>Logo Design 8</h4>
+        <p>Insurance & Technology logo</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section stats-section" id="stats">
+  <div class="section-eyebrow reveal">By The Numbers</div>
+  <h2 class="section-title reveal">Achievements</h2>
+  <div class="stats-grid reveal">
+    <div class="stat-block"><strong class="count-up" data-target="3" data-suffix="+">0</strong><span>Projects Completed</span></div>
+    <div class="stat-block"><strong class="count-up" data-target="6" data-suffix="+">0</strong><span>Technologies Learned</span></div>
+    <div class="stat-block"><strong>100%</strong><span>Passion for Learning</span></div>
+    <div class="stat-block"><strong>2026</strong><span>Growing Portfolio</span></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="contact-wrap">
+    <div class="reveal">
+      <div class="section-eyebrow">Let's Work Together</div>
+      <h2 class="section-title" style="margin-bottom:20px">Say <span>Hello</span></h2>
+      <div class="contact-info">
+        <p>I'm always open to learning opportunities, collaborations, internships, and exciting projects. Feel free to reach out — I'd love to connect and grow with fellow developers and professionals.</p>
+        <div class="contact-links">
+          <a href="mailto:ahafeezusmani79@gmail.com" class="contact-link-item"><span class="contact-icon">✉️</span>ahafeezusmani79@gmail.com</a>
+          <a href="https://github.com/ahafeezusmani79-art" target="_blank" class="contact-link-item"><span class="contact-icon">GH</span>github.com/ahafeezusmani79-art</a>
+          <a href="https://www.linkedin.com/in/ahafeezusmani79-art" target="_blank" class="contact-link-item"><span class="contact-icon">LI</span>linkedin.com/in/ahafeezusmani79-art</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-box reveal">
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" id="fname" placeholder="Ahmed"><span class="ferr" id="fnameErr">Name required</span></div>
+        <div class="form-group"><label>Last Name</label><input type="text" id="lname" placeholder="Raza"><span class="ferr" id="lnameErr">Last name required</span></div>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" id="femail" placeholder="ahmed@email.com"><span class="ferr" id="femailErr">Valid email required</span></div>
+      <div class="form-group">
+        <label>Subject</label>
+        <select id="fsubject" style="appearance:none;-webkit-appearance:none;cursor:pointer;">
+          <option value="">Select a topic...</option>
+          <option>Freelance Project</option><option>Full-time Opportunity</option>
+          <option>Collaboration</option><option>Logo Design</option><option>General Inquiry</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Message</label><textarea id="fmsg" placeholder="Tell me about your project..."></textarea><span class="ferr" id="fmsgErr">At least 10 characters</span></div>
+      <button class="form-submit" id="submitBtn" onclick="submitForm()"><span id="submitTxt">Send Message</span><span>→</span></button>
+      <div class="form-toast" id="formToast"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 A.Hafeez Usmani — Built with HTML, CSS &amp; JS</p>
+  <div class="footer-social">
+    <a href="https://github.com/ahafeezusmani79-art" target="_blank" title="GitHub">GH</a>
+    <a href="https://www.linkedin.com/in/ahafeezusmani79-art" target="_blank" title="LinkedIn">LI</a>
+    <a href="mailto:ahafeezusmani79@gmail.com" title="Email">✉</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
